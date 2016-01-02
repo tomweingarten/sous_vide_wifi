@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sous Vide Wifi</title>
+  <meta name="description" content="Sous Vide WiFi">
+  <meta name="author" content="Tom Weingarten">
+
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="vendor/nv.d3.min.css?v=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+  <script src="vendor/nv.d3.min.js"></script>
+  <script src="app.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="row">
+    <div id="controls" class="large-12 columns">
+    <h1>Sous Vide Wifi</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div id="controls" class="large-6 columns">
+      <div class="row">
+        <div class="large-12 small-12 columns" id="error-row">
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 small-6 columns">
+          IP Address
+        </div>
+        <div class="large-6 small-6 columns">
+          <input id='ip-address' />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 small-6 columns">
+          Current Temperature
+        </div>
+        <div class="large-6 small-6 columns" id="current-temperature">
+          N/A
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 small-6 columns">
+          Target Temperature
+        </div>
+        <div class="large-6 small-6 columns">
+          <input id="target-temperature"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 small-6 columns">
+          Current Output
+        </div>
+        <div class="large-6 small-6 columns" id="current-output">
+          N/A
+        </div>
+      </div>
+    </div>
+    <div id="temperature-chart" class="large-6 columns">
+        <svg style='height:500px'>
+            
+        </svg>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+#define SSID "YOUR_SSID_HERE"       // insert your SSID
+#define PASS "YOUR_WIFI_PASSWORD_HERE"   // insert your password
+
